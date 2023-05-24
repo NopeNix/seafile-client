@@ -7,7 +7,7 @@
 Seafile Client Docker Image
 
 ## Where to find my Files?
-You can find all files under ```/app/seafiles/seafile/LIBRARY_NAME``` so e.g. if your Library is named Downloads than the path to your files would be ```/app/seafiles/seafile/Downloads```
+You can find all files from the Library in ```/app/lib/```
 
 ## Security
 The Container gets automatically build every week with the freshed updates available. 
@@ -20,6 +20,7 @@ services:
         image: nopenix/seafile-client
         volumes:
             - SeafileData:/app/seafiles/
+            - LibraryData:/app/lib
         environment:
             - SERVER=ServerURI # e.g. https://share.example.com
             - LIB_ID=000aaaaa-a0aa-0a00-0aa0-000a0000a000 # Library ID
@@ -28,5 +29,6 @@ services:
 
 volumes:
     SeafileData:
+    LibraryData:
 
 ```

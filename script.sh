@@ -19,7 +19,7 @@ echo "      LIBRARY         : $LIB_ID"
 echo "      LOCATION        : /app/seafiles/"
 echo "      SEAFILE USER    : $SEAFILE_USERNAME"
 echo ""
-seaf-cli download -l "$LIB_ID" -s "$SERVER" -u "$SEAFILE_USERNAME" -p "$SEAFILE_PASSWORD"
+seaf-cli sync -l "$LIB_ID" -d /app/lib -s "$SERVER" -u "$SEAFILE_USERNAME" -p "$SEAFILE_PASSWORD"
 echo ""
 
 # Watching Seafile Log

@@ -21,6 +21,7 @@ RUN apt install seafile-cli -y
 # Creating Folders
 RUN mkdir /app
 RUN mkdir /app/seafiles
+RUN mkdir /app/lib
 
 # Copy needed Data
 COPY script.sh /app/script.sh
