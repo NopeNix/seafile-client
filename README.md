@@ -19,7 +19,7 @@ services:
     app:
         image: nopenix/seafile-client
         volumes:
-            - SeafileData:/app/seafiles/seafile/LIBRARY_NAME # !!CHANGE!! LIBRARY_NAME to the name of your Library
+            - SeafileData:/app/seafiles/
         environment:
             - SERVER=ServerURI # e.g. https://share.example.com
             - LIB_ID=000aaaaa-a0aa-0a00-0aa0-000a0000a000 # Library ID
